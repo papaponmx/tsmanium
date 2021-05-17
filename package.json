@@ -1,0 +1,20 @@
+{
+    "name": "tsmanium",
+    "displayName": "TSManium",
+    "description": "This is the best package ever created for ES6, React and Redux.",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.56.0"
+    },
+    "categories": [
+        "Snippets"
+    ],
+    "contributes": {
+        "snippets": [
+            {
+                "language": "typescript",
+                "path": "./snippets/snippets.code-snippets"
+            }
+        ]
+    }
+}
