@@ -1,1 +1,37 @@
-{}
+
+{
+  "Console log": {
+    "prefix": "clog",
+    "body": [
+      "console.log(${1:message})"
+    ],
+    "description": "Log something to the console"
+  },
+  "Anonymous function": {
+    "prefix": "anfn",
+    "body": [
+      "(${1:params}: ${2:paramType}): ${3:returnType} => {",
+      "${4}",
+      "}"
+    ],
+    "description": "Creates an anonymous function"
+  },
+  "Named function": {
+    "prefix": "nfn",
+    "body": [
+      "(${1: params}: ${2: paramType}): ${3:returnType} => {",
+      "${4}",
+      "}"
+    ],
+    "description": "Creates a named function"
+  },
+  "ES5 Function declaration": {
+    "prefix": "fn",
+    "body": [
+      "function ${1:functionName}(${2:params}) {",
+      "${3}",
+      "}"
+    ],
+    "description": "Creates a ES5 function declaration"
+  }
+}
