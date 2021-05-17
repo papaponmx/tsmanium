@@ -33,5 +33,20 @@
       "}"
     ],
     "description": "Creates a ES5 function declaration"
+  },
+  "Import Statement": {
+    "prefix": "imp",
+    "body": "import ${1:ModuleName} from \"${2:Module}\"",
+    "description": "Creates an ES6 import statement"
+  },
+  "Import Statement Destructured": {
+    "prefix": "imd",
+    "body": "import { ${1:ModuleName} } from \"${2:Module}\"",
+    "description": "Creates an ES6 import statement"
+  },
+  "Import Everything as": {
+    "prefix": "imd",
+    "body": "import * as ${AliasName} from \"${2:Module}\"",
+    "description": "Import everything from a module with an alias"
   }
 }
