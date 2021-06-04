@@ -3,6 +3,11 @@
     "displayName": "TSManium",
     "description": "This is the best package ever created for ES6, React and Redux.",
     "version": "0.0.1",
+    "keywords": [
+      "snippets",
+      "react",
+      "typescript"
+    ],
     "engines": {
         "vscode": "^1.56.0"
     },
@@ -13,7 +18,15 @@
         "snippets": [
             {
                 "language": "typescript",
-                "path": "./snippets/snippets.code-snippets"
+                "path": "./snippets/snippets.json"
+            },
+            {
+                "language": "typescriptreact",
+                "path": "./snippets/snippets.json"
+            },
+            {
+                "language": "typescript",
+                "path": "./snippets/ts-snippets.json"
             }
         ]
     }
