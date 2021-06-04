@@ -176,5 +176,84 @@
     "prefix": "cin",
     "body": "console.info(${1:object})",
     "description": "Displays a message in the console but also displays a blue information icon along with the logged message"
-  }
+  },
+  "import React": {
+    "prefix": "imr",
+    "body": ["import React from 'react'", ""]
+  },
+  "reactClassComponent": {
+    "prefix": "rcc",
+    "body": [
+      "import React, { Component } from 'react'",
+      "",
+      "export default class ${1:${TM_FILENAME_BASE}} extends Component {",
+      "\trender() {",
+      "\t\treturn (",
+      "\t\t\t<div>",
+      "\t\t\t\t$0",
+      "\t\t\t</div>",
+      "\t\t)",
+      "\t}",
+      "}",
+      ""
+    ],
+    "description": "Creates a React component class"
+  },
+  "reactClassExportComponent": {
+    "prefix": "rce",
+    "body": [
+      "import React, { Component } from 'react'",
+      "",
+      "export class ${1:${TM_FILENAME_BASE}} extends Component {",
+      "\trender() {",
+      "\t\treturn (",
+      "\t\t\t<div>",
+      "\t\t\t\t$0",
+      "\t\t\t</div>",
+      "\t\t)",
+      "\t}",
+      "}",
+      "",
+      "export default ${1:${TM_FILENAME_BASE}}",
+      ""
+    ],
+    "description": "Creates a React component class and exports it"
+  },
+  "reactFunctionalComponent": {
+    "prefix": "rfc",
+    "body": [
+      "import React, { FC } from 'react'",
+      "",
+      "type Props = { ${3:propTypes}  }",
+      "const ${1:COMPONENT_NAME} : FC<Props> = (${2:props}): ${4:returnType} => {",
+      "\treturn (",
+      "\t\t<div>",
+      "\t\t\t$0",
+      "\t\t</div>",
+      "\t)",
+      "}",
+      ""
+    ],
+    "description": "Creates a React Functional Component"
+  },
+  "reactFunctionalExportComponent": {
+    "prefix": "rfce",
+    "body": [
+      "import React, { FC } from 'react'",
+      "",
+      "type Props = { ${4: propTypes}  }",
+      "const ${1:COMPONENT_NAME} : FC<Props> = (${2:props}): ${4:returnType} => {",
+      "",
+      "\treturn (",
+      "\t\t<div>",
+      "\t\t\t$0",
+      "\t\t</div>",
+      "\t)",
+      "}",
+      "",
+      "export default ${1:${COMPONENT_NAME}}",
+      ""
+    ],
+    "description": "Creates a React Functional Component and exports it"
+  },
 }
