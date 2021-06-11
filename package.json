@@ -1,13 +1,22 @@
 {
     "name": "tsmanium",
-    "displayName": "TSManium",
-    "description": "This is the best package ever created for ES6, React and Redux.",
-    "version": "0.0.1",
+    "displayName": "TSmanium",
+    "description": "Typescript and React snippets in ES6+ for",
+    "icon": "images/icon.png",
+    "version": "0.0.5",
     "keywords": [
+      "tsmanium",
       "snippets",
       "react",
       "typescript"
     ],
+    "license": "MIT",
+    "author": "Jaime Rios <jaime.rios@hey.com> (https://jaimerios.io)",
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/papaponmx/tsmanium"
+    },
+    "publisher": "tsmanium",
     "engines": {
         "vscode": "^1.56.0"
     },
@@ -18,15 +27,11 @@
         "snippets": [
             {
                 "language": "typescript",
-                "path": "./snippets/snippets.json"
+                "path": "./snippets/snippets.code-snippets"
             },
             {
                 "language": "typescriptreact",
-                "path": "./snippets/snippets.json"
-            },
-            {
-                "language": "typescript",
-                "path": "./snippets/ts-snippets.json"
+                "path": "./snippets/snippets.code-snippets"
             }
         ]
     }
